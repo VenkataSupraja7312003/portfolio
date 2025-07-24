@@ -2,7 +2,7 @@ function toggleMenu() {
     document.getElementById("menu").classList.toggle("show");
   }
 
-  // Optional: Close menu if clicked outside
+  // Close menu when clicking outside
   window.addEventListener("click", function (e) {
     const menu = document.getElementById("menu");
     const hamburger = document.querySelector(".hamburger");
