@@ -593,6 +593,10 @@ body, html, .main {
         flex-direction: column;
         align-items: center;
     }
+    .navContainer a:hover{
+        background-color:rgb(18, 205, 205);
+        color:white;
+    }
     .nav h1 {
         font-size: 2rem;
     }
