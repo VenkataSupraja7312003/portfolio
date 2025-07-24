@@ -491,7 +491,21 @@ body,html,.main{
     width:300px;
     border-radius:20px;
 }
-/* Responsive Design */
+/* Base styles remain unchanged */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body, html, .main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Responsive design */
 @media (max-width: 1024px) {
     .navContainer {
         width: 70%;
@@ -515,7 +529,8 @@ body,html,.main{
     .Home .right p {
         padding: 0;
     }
-    .About, .Education {
+
+    .About {
         flex-direction: column;
         height: auto;
     }
@@ -529,18 +544,23 @@ body,html,.main{
         width: 200px;
         margin: 0 auto;
     }
+
+    .Education {
+        padding: 2rem 1rem;
+    }
     .Education2 {
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
     }
     .Education2 .bar {
         display: none;
     }
-    .Education2 .college,
-    .Education2 .school,
-    .Education2 .engineering {
-        width: 80vw;
+    .Education2 .college, .Education2 .school, .Education2 .engineering {
+        width: 90vw;
+        text-align: center;
     }
+
     .Project .orderproject {
         flex-direction: column;
         padding: 2rem 0;
@@ -548,13 +568,23 @@ body,html,.main{
     .Project .orderproject #suup {
         width: 80vw;
     }
+
     .Contact {
         padding: 2rem;
         font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
-    .Contact .ing {
-        height: auto;
+    .Contact .cont-me {
         width: 100%;
+        max-width: 500px;
+        padding: 1rem;
+    }
+    .Contact input,
+    .Contact textarea,
+    .Contact button {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -572,17 +602,19 @@ body,html,.main{
     .navContainer a {
         font-size: 1rem;
     }
-    .Home .right #first,
-    .Home .right #second {
+
+    .Home .right #first, .Home .right #second {
         font-size: 2rem;
     }
     .Home .right .icons i {
         font-size: 1.5rem;
     }
+
     .Project h1,
     .Contact div h1 {
         font-size: 2rem;
     }
+
     .About .top .box .skill {
         width: 90vw;
         font-size: 1rem;
@@ -605,16 +637,19 @@ body,html,.main{
     .navContainer p {
         font-size: 0.9rem;
     }
+
     .Home .right .BUTT button {
         width: 100%;
         margin: 1rem 0;
     }
+
     .Contact .cont-me {
         padding: 1rem;
+        width: 100%;
     }
     .Contact input,
-    .Contact textarea {
+    .Contact textarea,
+    .Contact button {
         width: 100%;
     }
 }
-
