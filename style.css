@@ -590,7 +590,7 @@ body, html, .main {
 
 @media (max-width: 768px) {
     .navContainer {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
     .nav h1 {
@@ -718,7 +718,7 @@ body, html, .main {
 }
 .nav {
     display: flex;
-    flex-direction:row
+    flex-direction:row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
@@ -764,7 +764,7 @@ body, html, .main {
 
     .navContainer {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
@@ -783,5 +783,38 @@ body, html, .main {
 }
 @media (max-width:480px){
     flex-direction:row;
+}
+/* Remove fixed heights to allow flexible layouts */
+.Home, .About, .Education, .Project, .Contact {
+  height: auto !important;
+  padding-top: 13vh; /* Keeps your navbar offset behavior */
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+/* Add spacing between sections */
+.Project, .Contact {
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .Contact {
+    padding: 2rem 1rem 3rem 1rem;
+    margin-bottom: 3rem;
+    overflow: visible;
+  }
+}
+.Contact .cont-me {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.Contact input,
+.Contact textarea,
+.Contact button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
