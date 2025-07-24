@@ -1,150 +1,493 @@
-/* ✅ Tablet & Mobile Adjustments */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem 0;
-    gap: 0.5rem;
-  }
-
-  .navContainer {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .nav h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .navContainer a {
-    font-size: 1.2rem;
-  }
-
-  .Home {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    height: auto;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .Home .left .img {
-    height: 300px;
-    width: 200px;
-    margin-bottom: 1.5rem;
-  }
-
-  .Home .right #first {
-    font-size: 1.8rem;
-  }
-
-  .Home .right #second {
-    font-size: 2.5rem;
-  }
-
-  .Home .right p {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .About,
-  .Project,
-  .Education,
-  .Contact {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    height: auto;
-  }
-
-  .About .top,
-  .About .bottom {
-    width: 100%;
-    height: auto;
-  }
-
-  .About .top .box .skill {
-    width: 90%;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-  }
-
-  .Education2 {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .Education2 .school,
-  .Education2 .college,
-  .Education2 .engineering {
-    width: 90%;
-  }
-
-  .Project .orderproject {
+*{
     padding: 0;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .Project .orderproject #suup {
-    width: 80%;
-    font-size: 1.2rem;
-  }
-
-  .Contact {
-    font-size: 1.2rem;
-  }
-
-  .cont-me {
-    width: 90%;
-    padding: 2rem;
-  }
-
-  .cont-me input,
-  .cont-me textarea {
-    width: 100%;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .Contact .ing {
-    width: 80%;
-    height: auto;
-  }
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+body,html,.main{
+    height:100vh;
+    width:100%;
 
-/* ✅ Small Phones */
-@media (max-width: 480px) {
-  .nav h1 {
-    font-size: 1.5rem;
-  }
+}
+.Home{
+    padding-top:13vh;
+    height:100vh;
+    width:100%;
+}
+.nav{
+    background-color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height:13%;
+    width:100%;
+    position:fixed;
 
-  .navContainer a {
-    font-size: 1rem;
-  }
+}
+.nav p a{
+    color:rgb(18, 205, 205);
+    cursor:pointer;
+}
+.fakenav{
+    height:13%;
+    width:100%;
+    background-color:white;
+    background-color:yellow;
+}
+.nav h1 span{
+    color:rgb(18, 205, 205);
+    font-size:4rem;
 
-  .Home .right #second {
-    font-size: 2rem;
-  }
+}
+.navContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:50%;
+}
+.nav h1{
+    font-size:3rem;
+}
+.navContainer a{
+    font-size:1.5rem;
+    text-decoration:none;
+} 
+.navContainer p:hover{
+   color:rgb(18, 205, 205);
+   text-decoration: underline;
+}
+.Home{
+    height:87%;
+    width:100%;
+    display:flex;
+    /* background-color:black; */
+}
+ .left{
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.right{
+    height:100%;
+    width:50%;
+}
+.Home .left .img{
+    height:500px;
+    width:300px;
+    background-color:beige;
+    background-image:url(image1.jpg);
+    background-size:cover;
+    background-position:center;
+    border-radius:145px;
+  
+}
+.Home .right{
+    display:flex;
+    /* align-items:center; */
+    justify-content:center;
+    flex-direction:column;
+}
+.Home .right #first{
+   font-size:2.5rem;
+}
+.Home .right #second{
+    font-size:4.5rem;
+    color:rgb(18, 205, 205);
+}
+.Home .right p{
+    font-size:1.5rem;
+    /* text-align:center; */
+    padding-right: 5rem;
+}  
+.Home .right .icons i{
+    border-radius:50%;
+    padding:1rem;
+    font-size:2rem;
+    cursor:pointer;
+}
+.Home .right .icons i:hover{
+    background-color:rgb(129, 229, 229);
+}
+.Home .right .BUTT button{
+    margin-top:50px;
+    padding:1.2rem;
+    font-size:1.2rem;
+    border:none;
+    outline:none;
+    color:black;
+    background-color:rgb(18, 205, 205);
+    border-radius:12px;
+    cursor:pointer;
+}
+.Home .right .BUTT button:hover{
 
-  .Project h1,
-  .About .top h1,
-  .Contact h1 {
-    font-size: 2rem;
-  }
+    color:white;
+    background-color:rgb(146, 237, 237);
+}
+.About{
+    padding-top:13vh;
+    display:flex;
+    height:100vh;
+    width:100%;
+}
+.About .top{
+    height:87vh;
+    width:60vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.About .top h1{
+    font-size:2rem;
+    color:rgb(18, 205, 205);
+}
+.About .top p{
+    font-size:1.1rem;
+    text-align:center;
+    line-height:2rem;
+}
+/* .About .top .box{
+    text-align:center;
 
-  .cont-me button {
-    width: 100%;
-    font-size: 1rem;
-    padding: 1rem;
-  }
+} */
+.About .top .box .skill{
+   padding:1rem;
+   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+   height:350px;
+   width:600px; 
+   line-height: calc(300px / 5);
+   font-size:1.5rem;
+   color:white;
+   border-radius:20px
+}
+/* span{
+    display:inline-block;
+} */
+.bord1{
+    display:inline-block;
+    height:10px;
+    width:0px;
+    background-image: linear-gradient(to right, #e70e4f 0%, #efce13 100%);
+    animation-name: move1;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-delay:0.3s;
+    animation-direction: alternate;
+   
+
+}
+.bord2{
+    display:inline-block;
+    height:10px;
+    width:0px;
+    background-image: linear-gradient(to right, #e70e4f 0%, #efce13 100%);
+    animation-name: move2;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-delay:0.6s;
+    animation-direction: alternate;
+ 
+}
+.bord3{
+    display:inline-block;
+    height:10px;
+    width:0px;
+    background-image: linear-gradient(to right, #e70e4f 0%, #efce13 100%);
+    animation-name: move3;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-delay:0.9s;
+    animation-direction: alternate;
+
+
+}
+.bord4{
+    display:inline-block;
+    height:10px;
+    width:0px;
+    background-image: linear-gradient(to right, #e70e4f 0%, #efce13 100%);
+    animation-name: move4;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+    /* animation-iteration-count:3; */
+    animation-delay:1.2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+
+}
+.bord5{
+    display:inline-block;
+    height:10px;
+    width:0px;
+    background-image: linear-gradient(to right, #e70e4f 0%, #efce13 100%);
+    animation-name: move5;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    /* animation-delay:5s; */
+    animation-delay:1.5s;
+    animation-direction: alternate;
+
+  
+}
+@keyframes move1{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:65%;
+    }
+}
+@keyframes move2{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:55%;
+    }
+}
+@keyframes move3{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:75%;
+    }
+}
+@keyframes move4{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:65%;
+    }
+}
+@keyframes move5{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:60%;
+    }
+}
+.About .bottom{
+    height:87vh;
+    width:40vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.About .bottom .imigo{
+    height:400px;
+    width:300px;
+    background:url(image2.jpg);
+    background-position:center;
+    background-size:cover;
+    border-radius:30px;
+}
+.Education{
+    padding-top:13vh;
+    height:100%;
+    width:100%;
+    background-image:url(bg.jpg);
+    background-size:cover;
+    background-position:center;
+
+}
+.Education h1{
+    text-align:center;
+    color:black;
+    font-size:2rem;
+    text-decoration:underline;
+}
+.Education2{
+    height:80%;
+    text-align:center;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.Education2 .school{
+    height:20vh;
+    width:25vw;
+
+}
+.Education2 .bar{
+   height:100%;
+   width:0.3rem;
+   background-color:black;
+   border-radius:10px;
+}
+.Education2 .higherEdu{
+   display:flex;
+   justify-content:space-evenly;
+   /* align-items:space-around; */
+   flex-direction:column;
+   flex-wrap:wrap
+}
+.Education2 .college
+{
+    height:20vh;
+    width:25vw;
+
+
+}
+.Education2 .engineering{
+    height:20vh;
+    width:25vw;
+}
+#year{
+    color:green;
+    font-size:1.5rem;
+}
+#name{
+    /* text-decoration:underline; */
+    font-size:1.5rem;
+}
+#para{
+    text-align:center;;
+}
+#cgpa{
+    font-size:1.5rem;
+}
+.Project{
+    padding-top:13vh;
+    height:100vh;
+    width:100%;
+    color:rgb(103, 95, 95);
+   
+}
+.Project h1{
+    text-align:center;
+    font-size:3rem;
+}
+.Project .orderproject{
+   display:flex;
+   /* flex-direction:column; */
+   justify-content:center;
+   align-items:center;
+   padding:0vh 20vh;
+   flex-wrap:wrap;
+   
+
+}
+.Project .orderproject a {
+    text-decoration:none;
+}
+.Project .orderproject a #suup:hover {
+    color:rgb(18, 205, 205);
+    text-decoration:underline;
+}
+.Project .orderproject #suup{
+    height:250px;
+    width:250px;
+    background-color:white;
+    margin:2vh;
+    text-align:center;
+    font-size:1.5rem;
+    border-radius:20px;
+    cursor:pointer;
+ 
+    color:rgb(103, 95, 95);
+}
+#vysh1{
+    height:85%;
+    width:100%;
+    background-image:url("AgeCalci.jpeg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+#vysh2{
+    height:85%;
+    width:100%;
+    background-image:url("calculator.webp");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+#vysh3{
+    height:85%;
+    width:100%;
+    background-image:url("tictactoe.jpg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+#vysh4{
+    height:85%;
+    width:100%;
+    background-image:url("css-animation.jpeg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+#vysh5{
+    height:85%;
+    width:100%;
+    background-image:url("wheatherFore.jpg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+#vysh6{
+    height:85%;
+    width:100%;
+    background-image:url("todo.jpg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+}
+.Contact{
+    padding-top:13vh;
+    height:100vh;
+    width:100%;
+    /* background-color:#a18cd1; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    font-size:1.5rem;
+}
+.Contact div h1{
+    text-align:center;
+    font-size:3rem;
+    /* color:rgb(18, 205, 205); */
+   
+}
+.cont-me{
+    border:2px solid grey;
+    padding:3rem;
+}
+.cont-me button{
+    margin-top:50px;
+    padding:1.2rem;
+    font-size:1.2rem;
+    border:none;
+    outline:none;
+    color:black;
+    background-color:rgb(18, 205, 205);
+    border-radius:12px;
+    cursor:pointer;
+}
+.cont-me button:hover{
+
+    color:white;
+    background-color:rgb(146, 237, 237);
+}
+.Contact .ing{
+    height:200px;
+    width:300px;
+    border-radius:20px;
 }
