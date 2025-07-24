@@ -590,7 +590,7 @@ body, html, .main {
 
 @media (max-width: 768px) {
     .navContainer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .nav h1 {
@@ -625,7 +625,7 @@ body, html, .main {
 
 @media (max-width: 480px) {
     .nav {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         padding: 1rem 0;
     }
