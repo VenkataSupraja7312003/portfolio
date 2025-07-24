@@ -32,7 +32,7 @@ body,html,.main{
     height:13%;
     width:100%;
     background-color:white;
-    background-color:yellow;
+    background-color:white;
 }
 .nav h1 span{
     color:rgb(18, 205, 205);
@@ -703,7 +703,8 @@ body, html, .main {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 2rem;
+        right:0rem;
+        /*left: 2rem;*/
         background-color: white;
         border: 1px solid #ddd;
         padding: 1rem;
