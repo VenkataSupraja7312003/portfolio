@@ -491,3 +491,130 @@ body,html,.main{
     width:300px;
     border-radius:20px;
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navContainer {
+        width: 70%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .Home {
+        flex-direction: column;
+        height: auto;
+        padding: 13vh 2rem 2rem 2rem;
+    }
+    .Home .left, .Home .right {
+        width: 100%;
+        text-align: center;
+    }
+    .Home .left .img {
+        height: 300px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .Home .right p {
+        padding: 0;
+    }
+    .About, .Education {
+        flex-direction: column;
+        height: auto;
+    }
+    .About .top, .About .bottom {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    .About .bottom .imigo {
+        height: 300px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .Education2 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .Education2 .bar {
+        display: none;
+    }
+    .Education2 .college,
+    .Education2 .school,
+    .Education2 .engineering {
+        width: 80vw;
+    }
+    .Project .orderproject {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .Project .orderproject #suup {
+        width: 80vw;
+    }
+    .Contact {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+    .Contact .ing {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav h1 {
+        font-size: 2rem;
+    }
+    .nav h1 span {
+        font-size: 2.5rem;
+    }
+    .navContainer a {
+        font-size: 1rem;
+    }
+    .Home .right #first,
+    .Home .right #second {
+        font-size: 2rem;
+    }
+    .Home .right .icons i {
+        font-size: 1.5rem;
+    }
+    .Project h1,
+    .Contact div h1 {
+        font-size: 2rem;
+    }
+    .About .top .box .skill {
+        width: 90vw;
+        font-size: 1rem;
+        height: auto;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+    .navContainer {
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .navContainer p {
+        font-size: 0.9rem;
+    }
+    .Home .right .BUTT button {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .Contact .cont-me {
+        padding: 1rem;
+    }
+    .Contact input,
+    .Contact textarea {
+        width: 100%;
+    }
+}
+
