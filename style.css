@@ -212,3 +212,86 @@
     font-size: 2rem;
   }
 }
+/* 📱 Tablets and smaller */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .Home {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Home .right #first,
+  .Home .right #second {
+    font-size: 2rem;
+  }
+
+  .Home .right p {
+    font-size: 1rem;
+  }
+
+  .About,
+  .Project,
+  .Education,
+  .Contact {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .Project .orderproject {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contact form,
+  .cont-me input,
+  .cont-me textarea,
+  .cont-me button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .cont-me {
+    padding: 1rem;
+  }
+}
+
+/* 📱 Small phones */
+@media (max-width: 480px) {
+  .nav h1 {
+    font-size: 1.5rem;
+  }
+
+  .navContainer a {
+    font-size: 1rem;
+  }
+
+  .Home .right #second {
+    font-size: 1.8rem;
+  }
+
+  .Project h1,
+  .About h1,
+  .Contact h1 {
+    font-size: 1.8rem;
+  }
+}
