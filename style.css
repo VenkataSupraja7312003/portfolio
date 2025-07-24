@@ -797,12 +797,16 @@ body, html, .main {
 .Project, .Contact {
   margin-top: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .Contact {
     padding: 2rem 1rem 3rem 1rem;
     margin-bottom: 3rem;
     overflow: visible;
   }
+    @media (max-width:480px){
+.fakenav{
+    background-color:white;
+}
 }
 .Contact .cont-me {
   width: 100%;
