@@ -718,6 +718,7 @@ body, html, .main {
 }
 .nav {
     display: flex;
+    flex-direction:row
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
@@ -779,5 +780,8 @@ body, html, .main {
     .navContainer.show {
         display: flex;
     }
+}
+@media (max-width:480px){
+    flex-direction:row;
 }
 
