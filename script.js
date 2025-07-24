@@ -1,3 +1,15 @@
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+
+  // Optional: Close menu if clicked outside
+  window.addEventListener("click", function (e) {
+    const menu = document.getElementById("menu");
+    const hamburger = document.querySelector(".hamburger");
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
 emailjs.init("bDea0IKhQDONO4iQP");  // Your public key
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
